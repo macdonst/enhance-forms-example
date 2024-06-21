@@ -9,6 +9,9 @@ export async function get (req) {
 export async function post(req) {
   const { body = {} } = req
   const { one = '', two = '', three = '' } = body
+
+  console.log('got a form post')
+
   return {
     session: {
       one, two, three
